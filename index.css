@@ -3,7 +3,7 @@
 
 .fixed-button {
     position: fixed;
-    bottom: 20px;
+    bottom: 90px;
     right: 20px;
     z-index: 999;
     animation: floating 3s infinite ease-in-out;
@@ -46,7 +46,7 @@
     bottom: 12px;
     left: -55px;
     transform: translateX(-50%);
-    background-color: blue;
+    background-color: #52aa5e;
     color: white;
     border-radius: 9px;
     border-top-right-radius: 0px;
@@ -145,7 +145,7 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: blue;
+    color: #52aa5e;
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
@@ -164,7 +164,7 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: blue;
+    background: #52aa5e;
 }
 .navbar .max-width{
     display: flex;
@@ -177,7 +177,7 @@ section .title::after{
     font-weight: 600;
 }
 .navbar .logo a span{
-    color: blue;
+    color: #52aa5e;
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
@@ -197,7 +197,7 @@ section .title::after{
     
 }
 .navbar .menu li a:hover{
-    color: blue;
+    color: #52aa5e;
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
@@ -214,7 +214,7 @@ section .title::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: blue;
+    background: #52aa5e;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -277,19 +277,19 @@ section .title::after{
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: blue;
+    color: #52aa5e;
     font-weight: 700;
 }
 .home .home-content a{
     display: inline-block;
-    background: blue;
+    background: #52aa5e;
     color: #fff;
     font-size: 20px;
     padding: 12px 36px;
     margin-top: 20px;
     font-weight: 400;
     border-radius: 10px;
-    border: 2px solid blue;
+    border: 2px solid #52aa5e;
     transition: all 0.3s ease;
     box-shadow:  0px 3px 7px rgba(0, 0, 0, 0.295);
     animation: glowing 2s ease-in-out infinite;
@@ -300,19 +300,19 @@ section .title::after{
 
 @keyframes glowing {
     0% {
-      box-shadow: 0 0 5px blue, 0 0 20px blue;
+      box-shadow: 0 0 5px #52aa5e, 0 0 20px #52aa5e;
     }
     50% {
-      box-shadow: 0 0 20px blue, 0 0 40px blue;
+      box-shadow: 0 0 20px #52aa5e, 0 0 40px #52aa5e;
     }
     100% {
-      box-shadow: 0 0 5px blue, 0 0 20px blue;
+      box-shadow: 0 0 5px #52aa5e, 0 0 20px #52aa5e;
      
     }
   }
 
 .home .home-content a:hover{
-    color: blue;
+    color: #52aa5e;
     background: none;
 }
 
@@ -353,7 +353,7 @@ section .title::after{
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    color: blue;
+    color: #52aa5e;
 }
 .about .about-content .right p{
     text-align: justify;
@@ -376,9 +376,9 @@ section .title::after{
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.295);
 }
 .about .about-content .right a:hover{
-    background: blue;
+    background: #52aa5e;
     color: #fff;
-    border: 2px solid blue;
+    border: 2px solid #52aa5e;
 }
 
 
@@ -396,9 +396,9 @@ section .title::after{
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.295);
 }
 .about .about-content .right .abouy:hover{
-    background: blue;
+    background: #52aa5e;
     color: #fff;
-    border: 2px solid blue;
+    border: 2px solid #52aa5e;
 }
 
 
@@ -434,10 +434,10 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
     margin-bottom: 40px;
-    border-bottom: 20px solid white;
+    border-bottom: 10px solid white;
 }
 .services .serv-content .card:hover{
-    background: blue;
+    background: #52aa5e;
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
@@ -447,7 +447,7 @@ section .title::after{
 }
 .services .serv-content .card i{
     font-size: 50px;
-    color: blue;
+    color: #52aa5e;
     transition: color 0.3s ease;
 }
 .services .serv-content .card:hover i{
@@ -484,19 +484,19 @@ section .title::after{
 }
 .skills .skills-content .left a{
     display: inline-block;
-    background: blue;
+    background: #52aa5e;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
     border-radius: 10px;
-    border: 2px solid blue;
+    border: 2px solid #52aa5e;
     transition: all 0.3s ease;
     box-shadow:  0px 3px 7px rgba(0, 0, 0, 0.295);
 }
 .skills .skills-content .left a:hover{
-    color: blue;
+    color: #52aa5e;
     background: none;
 }
 .skills .skills-content .right .bars{
@@ -524,7 +524,7 @@ section .title::after{
     height: 100%;
     left: 0;
     top: 0;
-    background: blue;
+    background: #52aa5e;
 }
 .skills-content .right .html::before{
     width: 93%;
@@ -555,7 +555,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover{
-    background: blue;
+    background: #52aa5e;
 }
 .teams .carousel .card .box{
     display: flex;
@@ -577,7 +577,7 @@ section .title::after{
     width: 150px;
     object-fit: cover;
     border-radius: 20px;
-    border: 5px solid blue;
+    border: 5px solid #52aa5e;
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover img{
@@ -593,7 +593,7 @@ section .title::after{
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid blue!important;
+    border: 2px solid #52aa5e!important;
     transition: all 0.3s ease;
 }
 .owl-dot.active{
@@ -602,7 +602,7 @@ section .title::after{
 }
 .owl-dot.active,
 .owl-dot:hover{
-    background: blue!important;
+    background: #52aa5e!important;
 }
 
 /* contact section styling */
@@ -648,7 +648,7 @@ section .title::after{
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: blue;
+    color: #52aa5e;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
@@ -707,13 +707,13 @@ section .title::after{
   border-radius: 10px;
   cursor: pointer;
   flex-wrap: nowrap;
-  background: blue;
-  border: 2px solid blue;
+  background: #52aa5e;
+  border: 2px solid #52aa5e;
   transition: all 0.3s ease;
   box-shadow:  0px 3px 7px rgba(0, 0, 0, 0.295);
 }
 .right form .button-area button:hover{
-  color: blue;
+  color: #52aa5e;
   background: none;
 }
 /* footer section styling */
@@ -724,7 +724,7 @@ footer{
     text-align: center;
 }
 footer span a{
-    color: blue;
+    color: #52aa5e;
     text-decoration: none;
 }
 footer span a:hover{
@@ -874,7 +874,7 @@ footer span a:hover{
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    color: blue;
+    color: #52aa5e;
 }
 .about .about-content .right p{
     text-align: justify;
@@ -898,9 +898,9 @@ footer span a:hover{
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.295);
 }
 .about .about-content .right a:hover{
-    background: blue;
+    background: #52aa5e;
     color: #fff;
-    border: 2px solid blue;
+    border: 2px solid #52aa5e;
 }
 
 
@@ -918,9 +918,9 @@ footer span a:hover{
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.295);
 }
 .about .about-content .right .abouy:hover{
-    background: blue;
+    background: #52aa5e;
     color: #fff;
-    border: 2px solid blue;
+    border: 2px solid #52aa5e;
 }
 
 
