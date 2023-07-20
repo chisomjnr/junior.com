@@ -3,7 +3,7 @@
 
 .fixed-button {
     position: fixed;
-    bottom: 90px;
+    bottom: 100px;
     right: 15px;
     z-index: 999;
     animation: floating 3s infinite ease-in-out;
@@ -21,6 +21,11 @@
     }
   }
 
+
+  .fixed-button a:hover{
+    background-color: #52aa5e;
+
+  }
   
   .fixed-button a {
     display: flex;
@@ -31,7 +36,7 @@
     background-color: white;
     border: 2px solid black;
     border-radius: 50%;
- 
+    transition: background-color .1s ease-in-out;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
     position: relative;
   }
@@ -244,14 +249,20 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/IMG_1104.JPG") no-repeat center;
+    background: url("images/preview.jpg") no-repeat 
+    center;
     height: 100vh;
+    
     color: #fff;
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
 }
+
+
+
+
 .home .max-width{
   width: 100%;
   display: flex;
@@ -405,9 +416,20 @@ section .title::after{
 
 
 /* services section styling */
-.services, .teams{
+.services{
     color:#fff;
-    background: #111;
+    
+    background: url("images/abstract-geometric-background-shapes-texture.jpg") no-repeat center;
+    background-attachment: fixed;
+
+}
+
+.teams{
+    color: #fff;
+    background: url("images/preview.jpg") no-repeat center;
+    /* background: #111; */
+/* 
+    background-attachment: fixed; */
 }
 
 .services .title2{
@@ -608,7 +630,9 @@ section .title::after{
 
 /* contact section styling */
 .contact{
-    background-color: black;
+   
+    border-top-right-radius: 90px;
+    border-top-left-radius: 90px ;
     color: #fff;
    
 }
@@ -727,20 +751,27 @@ section .title::after{
     justify-content: center;
     height: 100%;
     margin: 30px;
-    background-color: black;
     color: white;
 }
 
 
 .connect-heading {
     font-size: 26px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .social-icons {
     display: flex;
     align-items: center;
    
+}
+
+.xo{
+  
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
 }
 
 .icon-link {
@@ -753,17 +784,26 @@ section .title::after{
 
 /* You can customize the styles for the social media icons as needed */
 .icon-link img {
-    width: 40px;
-    height: 40px;
-   
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    transition: transform 0.2s ease-in-out;
 }
 
 .icon-name {
     margin-top: 5px;
     color: #fff;
+    transition: color .1s ease-in-out;
 }
 
+.icon-link img:hover{
+   transform: scale(1.2);
+}
 
+.icon-name:hover{
+    color: #52aa5e;
+    
+}
 
 
 
