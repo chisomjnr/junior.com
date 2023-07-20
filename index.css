@@ -98,7 +98,7 @@ body{
     background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #52aa5e;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -249,7 +249,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/preview.jpg") no-repeat 
+    background: url("images/Night (AI Upscale, original 1920x1080, uncompressed download in OP) [3840x2160].png") no-repeat 
     center;
     height: 100vh;
     
@@ -259,7 +259,6 @@ section .title::after{
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
 }
-
 
 
 
@@ -332,11 +331,13 @@ section .title::after{
 
 
 .about{
-    background: rgb(100, 100, 100);
+    background: rgb(82, 82, 82);
     color: #fff;
 
 }
-
+/* .about p{
+    font-size: 15px;
+} */
 .about .title::after{
     /* content: "who am i?"; */
 }
@@ -428,8 +429,8 @@ section .title::after{
     color: #fff;
     background: url("images/preview.jpg") no-repeat center;
     /* background: #111; */
-/* 
-    background-attachment: fixed; */
+
+    background-attachment: fixed;
 }
 
 .services .title2{
@@ -850,7 +851,8 @@ footer span a:hover{
         width: 100%;
         left: -100%;
         top: 0;
-        background: #111;
+        background: url("images/download (1).jpg") no-repeat 
+        center;
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
@@ -879,6 +881,13 @@ footer span a:hover{
     .max-width{
         max-width: 930px;
     }
+
+    .about{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+
     .about .about-content .column{
         width: 100%;
     }
@@ -897,6 +906,8 @@ footer span a:hover{
         margin-bottom: 10px;
     }
 
+
+
     .services .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
@@ -906,6 +917,17 @@ footer span a:hover{
         width: 100%;
         margin-bottom: 35px;
     }
+
+
+.contact{
+    background: url("images/Photoshopped the original background if you want to use WhatsApp dark mode _)! Go to settings -_ Chats -_ Backgrounds, and use this!.jpg") no-repeat 
+    center;
+
+border-bottom-left-radius: 60px;
+border-bottom-right-radius: 60px;
+
+}
+    
 }
 
 
@@ -932,7 +954,7 @@ footer span a:hover{
         width: 100%;
     }
 
-
+   
 
 /* about section styling */
 
