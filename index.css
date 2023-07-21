@@ -808,6 +808,66 @@ section .title::after{
 
 
 
+
+.connect-section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 30px;
+    color: white;
+}
+
+
+.connect-heading2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.social-icons2 {
+    display: flex;
+    align-items: center;
+   
+}
+
+.xo2{
+  
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.icon-link2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+    
+}
+
+/* You can customize the styles for the social media icons as needed */
+.icon-link2 img {
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.icon-name2 {
+    margin-top: 5px;
+    color: #fff;
+    transition: color .1s ease-in-out;
+}
+
+.icon-link2 img:hover{
+   transform: scale(1.2);
+}
+
+
+
+
 /* footer section styling */
 footer{
     background: #474747;
@@ -933,12 +993,19 @@ border-bottom-right-radius: 90px;
 
 /* mobile view */
 @media (max-width: 690px) { 
+    .fixed-button{
+        display: none;
+    }
+
+    .connect-section2{
+        display: none;
+    }
     .max-width{
         padding: 0 23px;
     }
     .home{
-        background: url("images/Mobile.png") no-repeat 
-        center;
+     
+        background-attachment: fixed;
     }
 
     .home .home-content .text-1{

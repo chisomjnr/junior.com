@@ -1,3 +1,16 @@
+
+document.getElementById("emailButton").addEventListener("click", function() {
+    const receiverEmail = "chisomechebelemjunior@gmail.com";
+    const subject = "Hello from the Website!";
+    const body = "I hope you are doing well.";
+
+    const mailtoLink = `mailto:${receiverEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailtoLink;
+});
+
+
+
 $(document).ready(function(){
     $(window).scroll(function(){
         // sticky navbar on scroll script
