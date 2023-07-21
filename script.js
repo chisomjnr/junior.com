@@ -1,8 +1,8 @@
 
 document.getElementById("emailButton").addEventListener("click", function() {
     const receiverEmail = "chisomechebelemjunior@gmail.com";
-    const subject = "Hello from the Website!";
-    const body = "I hope you are doing well.";
+    const subject = "(Your Subject Goes Here Einstein";
+    const body = "Hello Junior, From Your Portfolio...";
 
     const mailtoLink = `mailto:${receiverEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
