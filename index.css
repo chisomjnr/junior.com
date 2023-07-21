@@ -936,10 +936,10 @@ border-bottom-right-radius: 90px;
     .max-width{
         padding: 0 23px;
     }
-    /* .home{
+    .home{
         background: url("images/Mobile.png") no-repeat 
         center;
-    } */
+    }
 
     .home .home-content .text-1{
         font-size: 18px;
