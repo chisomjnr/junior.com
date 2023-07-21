@@ -923,8 +923,8 @@ footer span a:hover{
     background: url("images/Photoshopped the original background if you want to use WhatsApp dark mode _)! Go to settings -_ Chats -_ Backgrounds, and use this!.jpg") no-repeat 
     center;
 
-border-bottom-left-radius: 60px;
-border-bottom-right-radius: 60px;
+border-bottom-left-radius: 90px;
+border-bottom-right-radius: 90px;
 
 }
     
@@ -1048,8 +1048,11 @@ border-bottom-right-radius: 60px;
     margin-bottom: 10px;
 }
 
+
+
 .contact .contact-content .left{
     margin: 20px;
+
 }
 
 }
