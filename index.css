@@ -601,7 +601,7 @@ section .title::after{
     width: 150px;
     object-fit: cover;
     border-radius: 20px;
-    border: 5px solid #52aa5e;
+    border: 5px solid transparent;
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover img{
@@ -866,6 +866,36 @@ section .title::after{
 }
 
 
+.logo2{
+  
+    display: none;
+}
+
+.logo2 a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.logo2 a span{
+    color: #52aa5e;
+    transition: all 0.3s ease;
+}
+
+
+.logo3{
+    margin-top: 80px;
+}
+
+.logo3 a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.logo3 a span{
+    color: #52aa5e;
+    transition: all 0.3s ease;
+}
+
 
 
 /* footer section styling */
@@ -979,14 +1009,6 @@ footer span a:hover{
     }
 
 
-.contact{
-    background: url("images/Photoshopped the original background if you want to use WhatsApp dark mode _)! Go to settings -_ Chats -_ Backgrounds, and use this!.jpg") no-repeat 
-    center;
-
-border-bottom-left-radius: 90px;
-border-bottom-right-radius: 90px;
-
-}
     
 }
 
@@ -997,6 +1019,10 @@ border-bottom-right-radius: 90px;
         display: none;
     }
 
+    .logo2{
+        display: contents;
+        margin-top: 100px;
+    }
     .connect-section2{
         display: none;
     }
@@ -1004,7 +1030,7 @@ border-bottom-right-radius: 90px;
         padding: 0 23px;
     }
     .home{
-        background: url("images/Pin on NoMansDream Art.jpg") no-repeat 
+        background: url("images/download (7).jpg") no-repeat 
         center;
         background-attachment: fixed;
     }
@@ -1022,10 +1048,21 @@ border-bottom-right-radius: 90px;
     .home .home-content a{
         font-size: 20px;
     }
+
+    .services{
+        background: url("images/download (4).jpg") no-repeat 
+        center;
+        background-attachment: fixed;
+    }
     .services .serv-content .card{
         width: 100%;
     }
 
+    .teams{
+        background: url("images/mobile3.jpg") no-repeat 
+        center;
+        background-attachment: fixed;
+    }
    
 
 /* about section styling */
@@ -1123,6 +1160,20 @@ border-bottom-right-radius: 90px;
 
 }
 
+
+.contact{
+    background: url("images/Photoshopped the original background if you want to use WhatsApp dark mode _)! Go to settings -_ Chats -_ Backgrounds, and use this!.jpg") no-repeat 
+    center;
+
+border-bottom-left-radius: 100px;
+border-bottom-right-radius: 100px;
+
+}
+
+
+.connect-section{
+    margin-bottom: 50px;
+}
 }
 
 
@@ -1168,4 +1219,10 @@ border-bottom-right-radius: 90px;
         font-size: 23px;
         line-height: 38px;
     }
+
+    .logo2{
+        display: contents;
+        margin-top: 100px;
+    }
+
 }
