@@ -849,10 +849,11 @@ section .title::after{
 
 /* You can customize the styles for the social media icons as needed */
 .icon-link2 img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     margin: 5px;
     transition: transform 0.2s ease-in-out;
+    margin-top: 30px;
 }
 
 .icon-name2 {
@@ -883,7 +884,7 @@ section .title::after{
 
 
 .logo3{
-    margin-top: 80px;
+    margin-top: 30px;
 }
 
 .logo3 a{
@@ -1018,11 +1019,8 @@ footer span a:hover{
     .fixed-button{
         display: none;
     }
+  
 
-    .logo2{
-        display: contents;
-        margin-top: 100px;
-    }
     .connect-section2{
         display: none;
     }
@@ -1220,9 +1218,6 @@ border-bottom-right-radius: 100px;
         line-height: 38px;
     }
 
-    .logo2{
-        display: contents;
-        margin-top: 100px;
-    }
+  
 
 }
