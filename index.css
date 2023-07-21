@@ -1004,7 +1004,8 @@ border-bottom-right-radius: 90px;
         padding: 0 23px;
     }
     .home{
-     
+        background: url("images/Pin on NoMansDream Art.jpg") no-repeat 
+        center;
         background-attachment: fixed;
     }
 
