@@ -770,8 +770,8 @@ section .title::after{
 .xo{
   
   border-radius: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 7px;
+  margin-right: 7px;
   margin-bottom: 10px;
 }
 
@@ -822,7 +822,7 @@ section .title::after{
 
 .connect-heading2 {
     font-size: 26px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .social-icons2 {
@@ -856,7 +856,7 @@ section .title::after{
 }
 
 .icon-name2 {
-    margin-top: 5px;
+    margin-bottom: 15px;
     color: #fff;
     transition: color .1s ease-in-out;
 }
