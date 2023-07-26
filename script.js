@@ -1,6 +1,11 @@
+//popup
 document.addEventListener("DOMContentLoaded", () => {
     const popup = document.getElementById("popup");
     const closeButton = document.getElementById("closeButton");
+    const drawer = document.querySelector(".drawer");
+    let startDragY = 0;
+    let startY = 0;
+    let isScrolledToTop = true; 
 
     // Function to show the popup
     const showPopup = () => {
@@ -34,14 +39,85 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     
 
+    drawer.addEventListener("dragstart", (event) => {
+        startDragY = event.clientY;
+    });
+
+    drawer.addEventListener("dragend", (event) => {
+        const deltaY = event.clientY - startDragY;
+        startY = 0;
+        if (deltaY > 50) {
+            hidePopup();
+        }
+    });
+
+    drawer.addEventListener("drag", (event) => {
+        const deltaY = event.clientY - startDragY;
+        if (startY === 0) {
+            startY = popup.getBoundingClientRect().top;
+        }
+        popup.style.transform = `translateY(${startY + deltaY}px)`;
+    });
  
+    // Function to change the border radius of the top-left and top-right sides when scrolling
+    function updateBorderRadius() {
+        const scrolled = window.scrollY;
+        const maxScroll = 150; // Change this value as needed
+        const borderRadius = (scrolled <= maxScroll) ? (1 - scrolled / maxScroll) * 15 : 0;
+        popup.style.borderRadius = `0 0 ${borderRadius}px ${borderRadius}px`;
+        isScrolledToTop = (scrolled === 0);
+    }
+
+    // Scroll event listener to update border radius
+    document.addEventListener("scroll", () => {
+        updateBorderRadius();
+    });
+
+    // Resize event listener to update border radius on page load and window resize
+    window.addEventListener("resize", () => {
+        updateBorderRadius();
+    });
+
+    // Check if user is at the top on page load
+    updateBorderRadius();
+
+    // Reset the border radius when the user scrolls back to the top
+    document.addEventListener("scroll", () => {
+        if (isScrolledToTop) {
+            popup.style.borderRadius = "15px"; // Adjust this value to set the original border radius
+        }
+    });
 
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const container = document.querySelector(".about .max-width");
+  
+    function fadeInOnScroll() {
+      const containerTop = container.getBoundingClientRect().top;
+      const containerBottom = container.getBoundingClientRect().bottom;
+      const windowHeight = window.innerHeight;
+  
+      if (containerTop < windowHeight && containerBottom >= 0) {
+        // Element is partially or fully in view
+        container.style.opacity = 1;
+        container.style.transform = "translateY(0)";
+      } else {
+        // Element is not in view
+        container.style.opacity = 0;
+        container.style.transform = "translateY(30px)";
+      }
+    }
+  
+    // Call the function on initial load
+    fadeInOnScroll();
+  
+    // Attach the function to the scroll event
+    window.addEventListener("scroll", fadeInOnScroll);
+  });
 
 
-
-
+//email sending
 document.getElementById("emailButton").addEventListener("click", function() {
     const receiverEmail = "chisomechebelemjunior@gmail.com";
     const subject = "(Your Subject Goes Here Einstein";
@@ -53,7 +129,7 @@ document.getElementById("emailButton").addEventListener("click", function() {
 });
 
 
-
+//sticky nav bar
 $(document).ready(function(){
     $(window).scroll(function(){
         // sticky navbar on scroll script

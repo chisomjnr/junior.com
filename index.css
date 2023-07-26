@@ -106,6 +106,7 @@
 #popup p{
     margin-bottom: 20px;
     color: #fff;
+    font-size: 18px;
 }
 
 #popup button{
@@ -114,6 +115,7 @@
     padding: 20px;
     color: #fff;
     font-weight: bold;
+    font-size: 20px;
     border: 3.5px solid black;
 }
 
@@ -449,11 +451,19 @@ section .title::after{
 .about{
     background: rgb(82, 82, 82);
     color: #fff;
+  
+  }
+  
 
-}
 /* .about p{
     font-size: 15px;
 } */
+
+.about .max-width{
+    opacity: 0; /* Initially set to 0 to allow fade-in effect */
+    transform: translateY(30px); /* Initial translation to create fade-in effect */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
 .about .title::after{
     /* content: "who am i?"; */
 }
