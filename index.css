@@ -74,6 +74,110 @@
   
 
 
+  #popup {
+    display: none;
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    font-size: 15px;
+    font-weight: 400;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #52aa5e;
+    padding: 50px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border: 4px solid black;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#popup p{
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#popup button{
+    border-radius: 8px;
+    background-color: black;
+    padding: 20px;
+    color: #fff;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+#popup button:hover{
+    background-color: transparent;
+    color: #111;
+}
+
+#popup.show {
+    display: block;
+    animation: slide-up 0.5s;
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+#popup.hide{
+    display: block;
+    animation: slide-down 0.3s;
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+}
+
+.image-container img {
+    max-width: 120px;
+    max-height: 120px;
+    border: 4px solid #111;
+    border-radius: 50%;
+    margin-right: 9px;
+    margin-top: 10px; /* Adjust this value to move the image up */
+    animation: floatAnimation 2s ease-in-out infinite; /* Apply the floating animation */
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Adjust the floating distance as needed */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.image-container h1 {
+    color: #fff;
+    font-size: 35px;
+    right: -10px; /* Adjust the position as needed */
+    top: 50%; /* Center the h1 vertically within the container */
+  
+    margin: 0;
+}
 
 
 *{
@@ -725,8 +829,8 @@ section .title::after{
 .right form .button-area button{
   color: #fff;
   display: block;
-  width: 160px!important;
-  height: 45px;
+  width: 190px!important;
+  height: 60px;
   outline: none;
   font-size: 18px;
   font-weight: 500;

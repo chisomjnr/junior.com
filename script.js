@@ -1,3 +1,46 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const popup = document.getElementById("popup");
+    const closeButton = document.getElementById("closeButton");
+
+    // Function to show the popup
+    const showPopup = () => {
+        popup.classList.add("show");
+    };
+
+    // Function to hide the popup
+    const hidePopup = () => {
+        // popup.classList.add("hide"),
+        popup.style.animation = "slide-down 0.3s";
+        setTimeout(() => {
+            popup.remove();
+        }, 300);
+        // popup.classList.remove('show');
+    };
+
+
+   
+
+    // Show the popup after 5 seconds
+    setTimeout(showPopup, 1800);
+
+    closeButton.addEventListener("click", () => {
+        hidePopup();
+    });
+
+    document.addEventListener("click", (event) => {
+        if (!popup.contains(event.target) && event.target !== closeButton) {
+            hidePopup();
+        }
+    });
+    
+
+ 
+
+});
+
+
+
+
 
 document.getElementById("emailButton").addEventListener("click", function() {
     const receiverEmail = "chisomechebelemjunior@gmail.com";
