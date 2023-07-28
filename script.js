@@ -59,34 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
         popup.style.transform = `translateY(${startY + deltaY}px)`;
     });
  
-    // Function to change the border radius of the top-left and top-right sides when scrolling
-    function updateBorderRadius() {
-        const scrolled = window.scrollY;
-        const maxScroll = 150; // Change this value as needed
-        const borderRadius = (scrolled <= maxScroll) ? (1 - scrolled / maxScroll) * 15 : 0;
-        popup.style.borderRadius = `0 0 ${borderRadius}px ${borderRadius}px`;
-        isScrolledToTop = (scrolled === 0);
-    }
-
-    // Scroll event listener to update border radius
-    document.addEventListener("scroll", () => {
-        updateBorderRadius();
-    });
-
-    // Resize event listener to update border radius on page load and window resize
-    window.addEventListener("resize", () => {
-        updateBorderRadius();
-    });
-
-    // Check if user is at the top on page load
-    updateBorderRadius();
-
-    // Reset the border radius when the user scrolls back to the top
-    document.addEventListener("scroll", () => {
-        if (isScrolledToTop) {
-            popup.style.borderRadius = "15px"; // Adjust this value to set the original border radius
-        }
-    });
+  
 
 });
 

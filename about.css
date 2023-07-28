@@ -104,12 +104,19 @@ body{
 
 
 .navbar {
-    background-color: #333;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+
+
+
+
+    background-color: #252525;
+    
     color: #fff;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
+  
 }
 
 .back-button {
@@ -143,7 +150,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 600px;
 }
 
 h1 {
@@ -153,19 +160,73 @@ h1 {
 
 h2 {
     font-size: 17px;
-    margin-bottom: 80px;
+    font-weight: 400;
+    margin-bottom: 10px;
 }
 
 .social-icons {
     display: flex;
     justify-content: center;
+    
 }
 
-.social-icons img {
-    width: 40px;
-    margin: 10px;
+.social-icons i {
+
+    scale: 2.6;
+    margin: 50px;
+    transition: transform 0.2s ease-in-out;
 }
 
+.social-icons i:hover{
+    transform: scale(1.5);
+}
+
+
+
+.buttons {
+    margin-top: 40px;
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #52aa5e;
+    border:  3px solid #52aa5e;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color, color 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+ 
+}
+
+.btn1 {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: white;
+    border: 3px solid white;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color, color 0.2s ease-in-out;
+    
+}
+
+.btn1:hover {
+    background-color: #52aa5e;
+    color: white;
+  
+}
 
 .about-about{
     background-color: black;
