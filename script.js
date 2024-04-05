@@ -1,3 +1,43 @@
+'use strict';
+
+/**
+ * element toggle function
+ */
+
+const elemToggleFunc = function (elem) { elem.classList.toggle("active"); }
+
+
+
+/**
+ * skills toggle
+ */
+
+const toggleBtnBox = document.querySelector("[data-toggle-box]");
+const toggleBtns = document.querySelectorAll("[data-toggle-btn]");
+const skillsBox = document.querySelector("[data-skills-box]");
+
+for (let i = 0; i < toggleBtns.length; i++) {
+  toggleBtns[i].addEventListener("click", function () {
+
+    elemToggleFunc(toggleBtnBox);
+    for (let i = 0; i < toggleBtns.length; i++) { elemToggleFunc(toggleBtns[i]); }
+    elemToggleFunc(skillsBox);
+
+  });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 //popup
 document.addEventListener("DOMContentLoaded", () => {
     const popup = document.getElementById("popup");
@@ -78,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         // Element is not in view
         container.style.opacity = 0;
-        container.style.transform = "translateY(30px)";
+        container.style.transform = "translateY(100px)";
       }
     }
   
@@ -88,6 +128,185 @@ document.addEventListener("DOMContentLoaded", function () {
     // Attach the function to the scroll event
     window.addEventListener("scroll", fadeInOnScroll);
   });
+
+
+
+
+
+
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const container = document.querySelector(".home .max-width");
+  
+    function fadeInOnScroll() {
+      const containerTop = container.getBoundingClientRect().top;
+      const containerBottom = container.getBoundingClientRect().bottom;
+      const windowHeight = window.innerHeight;
+  
+      if (containerTop < windowHeight && containerBottom >= 0) {
+        // Element is partially or fully in view
+        container.style.opacity = 1;
+        container.style.transform = "translateY(0)";
+      } else {
+        // Element is not in view
+        container.style.opacity = 0;
+        container.style.transform = "translateY(100px)";
+      }
+    }
+  
+    // Call the function on initial load
+    fadeInOnScroll();
+  
+    // Attach the function to the scroll event
+    window.addEventListener("scroll", fadeInOnScroll);
+  });
+
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const container = document.querySelector(".services .max-width");
+  
+    function fadeInOnScroll() {
+      const containerTop = container.getBoundingClientRect().top;
+      const containerBottom = container.getBoundingClientRect().bottom;
+      const windowHeight = window.innerHeight;
+  
+      if (containerTop < windowHeight && containerBottom >= 0) {
+        // Element is partially or fully in view
+        container.style.opacity = 1;
+        container.style.transform = "translateY(0)";
+      } else {
+        // Element is not in view
+        container.style.opacity = 0;
+        container.style.transform = "translateY(100px)";
+      }
+    }
+  
+    // Call the function on initial load
+    fadeInOnScroll();
+  
+    // Attach the function to the scroll event
+    window.addEventListener("scroll", fadeInOnScroll);
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const container = document.querySelector(".teams .max-width");
+  
+    function fadeInOnScroll() {
+      const containerTop = container.getBoundingClientRect().top;
+      const containerBottom = container.getBoundingClientRect().bottom;
+      const windowHeight = window.innerHeight;
+  
+      if (containerTop < windowHeight && containerBottom >= 0) {
+        // Element is partially or fully in view
+        container.style.opacity = 1;
+        container.style.transform = "translateY(0)";
+      } else {
+        // Element is not in view
+        container.style.opacity = 0;
+        container.style.transform = "translateY(100px)";
+      }
+    }
+  
+    // Call the function on initial load
+    fadeInOnScroll();
+  
+    // Attach the function to the scroll event
+    window.addEventListener("scroll", fadeInOnScroll);
+  });
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const container = document.querySelector(".stats-list");
+  
+    function fadeInOnScroll() {
+      const containerTop = container.getBoundingClientRect().top;
+      const containerBottom = container.getBoundingClientRect().bottom;
+      const windowHeight = window.innerHeight;
+  
+      if (containerTop < windowHeight && containerBottom >= 0) {
+        // Element is partially or fully in view
+        container.style.opacity = 1;
+        container.style.transform = "translateX(0)";
+      } else {
+        // Element is not in view
+        container.style.opacity = 0;
+        container.style.transform = "translateX(0px)";
+      }
+    }
+  
+    // Call the function on initial load
+    fadeInOnScroll();
+  
+    // Attach the function to the scroll event
+    window.addEventListener("scroll", fadeInOnScroll);
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //email sending
@@ -140,14 +359,14 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: [ "Portfolio", "Space", "Universe", "World", "Galaxy",],
+        strings: [ "Portfolio", "Space", "Universe",],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: [" Web Developer", "Mobile Developer", "Graphics Designer", "Web Designer", "Digital Artist", "Youtuber", "Freelancer", "Video Editor","2D Animator",],
+        strings: ["Software Developer", " Web Developer", "Game Developer", "Mobile Developer", "Graphics Designer", "Web Designer", "Digital Artist", "Freelancer", "Video Editor","2D Animator",],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
