@@ -35,13 +35,15 @@
             <div class="logo"><a href="#">Jun<strong>ior.</strong></a></div>
             <ul class="menu">
                 <li><a href="#home"  class="menu-btn">Home</a></li>
-                <li><a href="#about" class="menu-btn">About</a></li>
-                <li><a href="#skills" class="menu-btn">Skills</a></li>
-                <li><a href="#services" class="menu-btn">Services</a></li>
+                <li><a href="#about" class="menu-btn">About Me</a></li>
+     
+                <li><a href="#skills" class="menu-btn">My Skills & Tools</a></li>
+                <li><a href="projects.html" class="menu-btn">My Projects</a></li>
+                <li><a href="#services" class="menu-btn">My Services</a></li>
             
-                <li><a style=" background: rgba(12, 12, 12, 0); border: 2px solid white; padding: 15px; border-radius: 10px; color: rgb(255, 255, 255);" href="#contact" class="menu-btn">Set Up A Meeting</a></li>
-               
-                <li><a style=" background: rgb(255, 255, 255); padding: 15px; border-radius: 10px; color: rgb(44, 44, 44);" href="#contact" class="menu-btn">Connect With Me</a></li>
+                <!-- <li><a style=" background: rgba(12, 12, 12, 0); border: 2px solid white; padding: 15px; border-radius: 10px; color: rgb(255, 255, 255);" href="#contact" class="menu-btn">Set Up A Meeting</a></li>
+                -->
+                <li><a  id="sty"  href="#contact" class="menu-btn">Connect With Me</a></li>
 
          
                 <!-- <li><a href="#connect" class="menu-btn">Connect Faster</a></li> -->
@@ -56,7 +58,7 @@
 
     <div class="fixed-button">
         <a href="https://wa.link/dgcak9">
-          <img src="images/whatsapp (2).png" alt="Message Icon" class="button-icon">
+          <img src="images/whatsapp (1).png" alt="Message Icon" class="button-icon">
           <strong class="button-message">Chat with Me</strong>
         </a>
       </div> 
@@ -74,6 +76,28 @@
 
 
 
+
+      <style>
+        #x {
+          animation: bouncee 2.5s infinite;
+        }
+        
+        @keyframes bouncee {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(10px);
+            }
+            60% {
+                transform: translateY(5px);
+            }
+        }
+        </style>
+        
+
+
+
     <!-- home section start -->
     <div class="overlay"></div>
         <section class="home" id="home">
@@ -82,8 +106,8 @@
                     <div class="text-1">Software Developer & Digital Artist</div>
                     <div class="text-2">Chisom Echebelem<br>
                     Junior.</div>
-                    <div style="color: grey;" class="text-3">Welcome to my <strong class="typing"></strong>,<br>Designed & Developed by me :)</div>
-                    <a href="#contact">Hire Me</a>
+                    <div style="color: grey;" class="text-3">Welcome to my <strong class="typing"></strong>,<br><i style="color: orange;" class="fas fa-check-circle"></i> Designed & Developed by me </div>
+                    <a href="#contact"><strong >Connect</strong> With Me <i id="x" style="margin-left: 8px;" class="fas fa-arrow-down"></i></a>
                 </div>
             </div>
         </section>
@@ -104,7 +128,7 @@
               </div>
 
               <h2 class="h2 card-title">
-                5+ <strong>Years of Experience</strong>
+                6+ <strong>Years of Experience</strong>
               </h2>
 
               <ion-icon name="chevron-forward-outline"></ion-icon>
@@ -170,14 +194,14 @@
     <!-- about section start -->
     <section class="about" id="about">
         <div class="max-width">
-            <h2 class="title">Okay, so <strong style="color: bisque;">who am I?</strong></h2>
+            <h2 class="title">Okay, So <strong style="color: bisque;">Who Am I?</strong></h2>
             <div class="about-content">
                 <div class="column left">
                     <img src="images/IMG_9494.PNG" alt="">
                 </div>
                 <div class="column right">
-                    <div class="text">I'm Junior & I'm <br> a <strong class="typing-2"></strong></div>
-                    <p style="">I’m a Highly skilled software developer with 5+ years of experience designing and
+                    <div class="text">I'm Junior & I'm <br> a <strong style="color: orange;" class="typing-2"></strong></div>
+                    <p style="line-height: 1.9;">I’m a Highly skilled software developer with 6+ years of experience designing and
                         implementing complex software applications like mobile apps, websites and 2D games.
                         <br>
                         <br>
@@ -185,20 +209,14 @@
                         JavaScript, React and C++, Just to mention a few. Strong problem-solving skills and a proven track record of
                         delivering high-quality software solutions on time and on budget. Also experienced in
                         Business Management, Marketing strategy (Digital Marketing), Digital art, animation and human relations.</p>
-                        <a href="new.html" class="abouy" >Hire Me</a>
-                    <a class="abou" href="/Junior CV (PDF).pdf" download>Download My CV</a>
+                        <a href="hireme.html" class="abouy" >Hire Me</a>
+                    <a class="abou" href="/Junior's CV.pdf" download>Download My CV</a>
                    
                 </div>
                 
             </div>
         </div>
     </section>
-
-
-
-
-   
-
 
 
 
@@ -216,12 +234,12 @@
 
         <div class="skills-content section-content">
 
-          <p class="section-subtitle">My skills</p>
+          <p class="section-subtitle">My skills & tools</p>
 
           <h2 class="h3 section-title">What Are My Programming & Digital Art Skills?</h2>
 
           <p class="section-text">
-            I develop simple, intuitive and responsive user interface that helps users get things done with less effort and time with those technologies.
+            I possess a diverse skill set that bridges both coding and creative design. My programming expertise includes proficiency in languages such as JavaScript, Python, and so on, allowing me to develop robust and efficient software solutions. <br> <br> In the realm of digital art, I excel in creating visually stunning graphics and animations using tools like Adobe Photoshop, Illustrator and so on, blending technical precision with artistic flair.
           </p>
 
           <div class="skills-toggle" data-toggle-box>
@@ -486,10 +504,142 @@
 
       </section>
 
+      <style>
+        .project {
+            background: #303030;
+            color: white;
+            padding: 120px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.24);
+        }
+      
+        .project h1 {
+            margin: 0;
+            font-size: 35px;
+            line-height: 1.2;
+        }
+      
+        .project p {
+            margin: 0;
+            font-size: 16px;
+            line-height: 1.9;
+            color: rgb(207, 207, 207);
+        }
+      
+        .project button {
+            background-color: #f39c12;
+            color: white;
+            border: none;
+            padding: 20px 40px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: .2s;
+        }
+      
+        .project button:hover {
+            background-color: #ffffff;
+            color: black;
+        }
+      
+        .project img{
+          width: 300px;
+        }
+      
+        /* Tablet view */
+        @media (max-width: 768px) {
+          .project {
+              padding: 30px;
+              flex-direction: column;
+              text-align: left;
+          }
+          
+          .project h1 {
+              font-size: 30px;
+          }
+          
+          .project p {
+              font-size: 14px;
+          }
+          
+          .project button {
+            background: white;
+            color: black;
+            margin-top: 30px;
+              padding: 15px 30px;
+              font-size: 14px;
+          }
+
+   
+      
+          .project img{
+            width: 250px;
+          }
+        }
+      
+        /* Mobile view */
+        @media (max-width: 480px) {
+          .project {
+              padding: 20px;
+              flex-direction: column;
+              text-align: left;
+          }
+          
+          .project h1 {
+              font-size: 25px;
+          }
+          
+          .project p {
+              font-size: 12px;
+          }
+          
+          .project button {
+              padding: 15px 20px;
+              font-size: 16px;
+          }
+      
+          .project img{
+            width: 200px;
+          }
+        }
+      </style>
 
 
+<style>
+  .project button i{
+    
+      animation: bounce2 2s infinite;
+  }
 
 
+  @keyframes bounce2 {
+      0%, 20%, 50%, 80%, 100% {
+          transform: translateX(0);
+      }
+      40% {
+          transform: translateX(15px);
+      }
+      60% {
+          transform: translateX(10px);
+      }
+  }
+</style>
+      
+      <section id="project" class="project" id="project">
+        <div style="max-width: 700px;">
+          <h1><i class="fas fa-star glowing-star" style="color: gold;"></i> Interested in My <strong >Previous Projects?</strong> <br>
+            Fantastic! Explore Them Here</h1>
+            <br>
+            <p>With over six years of experience in software development, I've created complex applications like mobile apps, websites, and 2D games using Java, Python, CSS, JavaScript, React, and C++. As a digital artist, I've also produced captivating graphic designs, animations, flyers, and more. Explore my previous projects to see my high-quality, on-time, and on-budget solutions!</p>
+        </div>
+      
+        <div>
+          <button onclick="window.location.href='projects.html'">Go to Projects <i style="margin-left: 8px;" class="fas fa-arrow-right"></i></button>
+        </div>
+      </section>
+      
 
 
 
@@ -538,17 +688,17 @@
    <!-- services section start -->
    <section class="services" id="services">
     <div class="max-width">
-        <h2 class="title">Here are my services</h2>
+        <h2 class="title">My Services</h2>
         <div class="serv-content">
             <div class="card">
                 <div class="box">
                     <i class="fas fa-paint-brush"></i>
                     <div class="text">Graphics Design<br>& Digital Art </div>
-                    <p>I help design and create digital art and graphics designs such as flyers, digital flyers, NFTs and so on.
+                    <p style="background: rgb(26, 26, 26); color: rgb(212, 212, 212); padding: 12px; border-radius: 10px; margin-top:20px; text-align:center;">I help design and create digital art and graphics designs such as flyers, digital flyers, NFTs and so on.
                         
                     </p>
                     <br>
-                    <a style="background: white; color: black; padding: 12px; border-radius: 10px; font-weight: 550;" href="contact.html">Hire Me</a>
+                   
 
                 </div>
             </div>
@@ -556,21 +706,21 @@
                 <div class="box">
                     <i class="fas fa-chart-line"></i>
                     <div class="text">Digital Marketing<br>& Media Management</div>
-                    <p> I help advertise and market your products or services online. I also offer media management services.
+                      <p style="background: rgb(26, 26, 26); color: rgb(212, 212, 212); padding: 12px; border-radius: 10px; margin-top:20px; text-align:center;"> I help advertise and market your products or services online. I also offer media management services.
 
                     </p>
                     <br>
-                    <a style="background: white; color: black; padding: 12px; border-radius: 10px; font-weight: 550;" href="contact.html">Hire Me</a>
+                   
                 </div>
             </div>
             <div class="card">
                 <div class="box">
                     <i class="fas fa-mobile-alt"></i>
                     <div class="text">App Development<br>& Design</div>
-                    <p>I design and develop high quality mobile applications for both IOS and android devices.
+                      <p style="background: rgb(26, 26, 26); color: rgb(212, 212, 212); padding: 12px; border-radius: 10px; margin-top:20px; text-align:center;">I design and develop high quality mobile applications for both IOS and android devices.
                     </p>
                     <br>
-                    <a style="background: white; color: black; padding: 12px; border-radius: 10px; font-weight: 550;" href="contact.html">Hire Me</a>
+                   
                 </div>
             </div>
 
@@ -581,10 +731,10 @@
                     <div class="box">
                         <i class="fas fa-desktop"></i>
                         <div class="text">Web Development<br>& Design</div>
-                        <p>I design and develop high resposive quality websites with a variety of programming languages.
+                          <p style="background: rgb(26, 26, 26); color: rgb(212, 212, 212); padding: 12px; border-radius: 10px; margin-top:20px; text-align:center;">I design and develop high resposive websites with a variety of programming languages.
                         </p>
                         <br>
-                        <a style="background: white; color: black; padding: 12px; border-radius: 10px; font-weight: 550;" href="contact.html">Hire Me</a>
+                       
                     </div>
                 </div>
       
@@ -592,10 +742,10 @@
                     <div class="box">
                         <i class="fas fa-gamepad"></i>
                         <div class="text">2D Game<br>Development & Design</div>
-                        <p>I build and design 2D mobile(IOS & Android) games and also online games for desktops and mobile.
+                          <p style="background: rgb(26, 26, 26); color: rgb(212, 212, 212); padding: 12px; border-radius: 10px; margin-top:20px; text-align:center;">I build and design 2D mobile(IOS & Android) games and also online games for desktops and mobile.
                         </p>
                         <br>
-                        <a style="background: white; color: black; padding: 12px; border-radius: 10px; font-weight: 550;" href="contact.html">Hire Me</a>
+                       
                     </div>
                 </div>
 
@@ -603,10 +753,10 @@
                     <div class="box">
                         <i class="fas fa-video"></i>
                         <div class="text">Video Editing<br>& 2D Animations</div>
-                        <p>I edit videos professionally and I also create 2D animations for ads & specific contents.
+                         <p style="background: rgb(26, 26, 26); color: rgb(212, 212, 212); padding: 12px; border-radius: 10px; margin-top:20px; text-align:center;">I edit videos professionally and I also create 2D animations for ads & specific contents.
                         </p>
                         <br>
-                        <a style="background: white; color: black; padding: 12px; border-radius: 10px; font-weight: 550;" href="contact.html">Hire Me</a>
+                       
                     </div>
                 </div>
 
@@ -748,7 +898,7 @@
         <div class="contact-content">
             <div class="column left">
                 <div class="text">Hi There!</div>
-                <p style=" color: rgb(201, 201, 201);">            Get in touch and let me know how i can help. Fill out the form and i’ll be in touch as soon as possible. You can also connect with me faster via my socials & mail.</p>
+                <p style=" color: rgb(201, 201, 201);"> Reach out and let's discuss how I can assist you. Fill out the form, and I'll respond promptly. <br><br> <a href="#conect" style="color: rgb(206, 206, 206);"><strong style="color: orange; text-decoration: underline; font-weight: 500;"> For a quicker connection,</strong> feel free to contact me through my social media channels and email. </a>  </p>
                 <div class="icons">
 
                   <div class="row">
@@ -780,20 +930,23 @@
             </div>
             <div class="column right">
                 <div class="text">Fill in the message box below</div>
-                <form action="#">
+                <form
+                action="https://formspree.io/f/mwpebvwb"
+                method="POST"
+              >
                     <div class="fields">
                         <div class="field name">
-                            <input type="text" placeholder="Personal Name or Company's" required>
+                            <input type="text" name="User_NAme" placeholder="Personal Name or Company's" required>
                         </div>
                         <div class="field email">
-                            <input type="email" placeholder="Personal Email or Company's" required>
+                            <input type="email" name="User_Email" placeholder="Personal Email or Company's" required>
                         </div>
                     </div>
                     <div class="field">
-                        <input type="text" placeholder="Reason For Message" required>
+                        <input type="text"  name="User_Purpose_of_Mail" placeholder="Reason For Message" required>
                     </div>
                     <div class="field textarea">
-                        <textarea cols="30" rows="10" placeholder="Message..." required></textarea>
+                        <textarea cols="30" name="User_Message" rows="10" placeholder="Message..." required></textarea>
                     </div>
                     <div class="button-area">
                         <button type="submit">Send Message</button>
@@ -953,19 +1106,19 @@
       <div class="social-icons">
           <a href="https://www.linkedin.com/in/chisomechebelemjunior/" class="icon-link">
               <div class="xo">      <img src="images/linkedin-logo.png" alt="Linedin"></div>
-              <span class="icon-name">Linkedin</span>
+              <!-- <span class="icon-name">Linkedin</span> -->
           </a>
           <a href="https://wa.link/dgcak9" class="icon-link">
               <div class="xo"> <img src="images/whatsapp (2).png" alt="WhatsApp"></div>
-              <span class="icon-name">WhatsApp</span>
+              <!-- <span class="icon-name">WhatsApp</span> -->
           </a>
           <a href="#" class="icon-link">
               <div class="xo"> <img src="images/gmail-logo.png" alt="Gmail" id="emailButton"></div>
-              <span class="icon-name">Gmail</span>
+              <!-- <span class="icon-name">Gmail</span> -->
           </a>
           <a href="https://github.com/chisomjnr" class="icon-link">
               <div class="xo"> <img src="images/github-sign.png" alt="Github" ></div>
-              <span class="icon-name">Github</span>
+              <!-- <span class="icon-name">Github</span> -->
               
           </a>
       
@@ -976,7 +1129,10 @@
 
 
 
-
+<br>
+<br>
+<br>
+<br>
 
 
 

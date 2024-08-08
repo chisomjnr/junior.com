@@ -1,0 +1,83 @@
+.body {
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hire-me {
+    background-color: #fff;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 50px rgba(0, 0, 0, 0.253);
+    width: 100%;
+    max-width: 800px;
+}
+
+.hire-me .container {
+    text-align: center;
+}
+
+.hire-me h1 {
+    margin-bottom: 5px;
+    color: #ffbb00;
+    /* background: orange;
+    padding: 15px;
+    border-radius: 10px; */
+}
+
+.hire-me h2 {
+    margin-bottom: 20px;
+    color: #333;
+    line-height: 1.2;
+    font-size: 25px;
+}
+
+
+.hire-me p {
+    margin-bottom: 30px;
+    color: #666;
+    font-size: 15px;
+}
+
+#hire-me-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#hire-me-form label {
+    margin-bottom: 5px;
+    color: #333;
+    text-align: left;
+}
+
+#hire-me-form input,
+#hire-me-form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #0e0e0e;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+#hire-me-form button {
+    padding: 15px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#hire-me-form button:hover {
+    background-color: black;
+}
