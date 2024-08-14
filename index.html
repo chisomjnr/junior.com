@@ -63,7 +63,7 @@
         </a>
       </div> 
 
-      <div id="popup">
+      <!-- <div id="popup">
         <div class="drawer" draggable="true"></div>
         <div class="image-container">
       
@@ -72,7 +72,7 @@
         </div>
           <p>I'm going to use them to help make your user experience a bit more easy.</p>
           <button id="closeButton">Got it!</button>
-      </div>
+      </div> -->
 
 
 
@@ -93,24 +93,47 @@
                 transform: translateY(5px);
             }
         }
+
+
+
+
+
+
+
+
+
+
         </style>
         
 
 
 
-    <!-- home section start -->
-    <div class="overlay"></div>
-        <section class="home" id="home">
-            <div class="max-width">
-                <div class="home-content">
-                    <div class="text-1">Software Developer & Digital Artist</div>
-                    <div class="text-2">Chisom Echebelem<br>
-                    Junior.</div>
-                    <div style="color: grey;" class="text-3">Welcome to my <strong class="typing"></strong>,<br><i style="color: orange;" class="fas fa-check-circle"></i> Designed & Developed by me </div>
-                    <a href="#contact"><strong >Connect</strong> With Me <i id="x" style="margin-left: 8px;" class="fas fa-arrow-down"></i></a>
-                </div>
+<!-- home section start -->
+<div class="overlay"></div>
+<section class="home" id="home">
+    <div class="max-width">
+        <div class="home-content-container">
+            <!-- Left Content -->
+            <div class="home-content">
+                <div class="text-1">Software Developer & Digital Artist</div>
+                <div class="text-2">Chisom Echebelem<br>Junior.</div>
+                <div style="color: grey;" class="text-3">Welcome to my <strong class="typing"></strong>,<br><i style="color: orange;" class="fas fa-check-circle"></i> Designed & Developed by me </div>
+                <a href="#contact"><strong>Connect</strong> With Me <i id="x" style="margin-left: 8px;" class="fas fa-arrow-down"></i></a>
             </div>
-        </section>
+            <!-- Right Content (QR Code) -->
+            <div class="qr-code-container">
+                <img src="images/Untitled (5).png" width="250" alt="">
+                <p>Scan QR code to view my portfolio on your <strong>mobile phone</strong> or <strong>tablet</strong>.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 
+<div style="background-color: black; color: white;">
+  <p>Hi there</p>
+</div>
+ -->
 
     
       <!-- 
@@ -523,7 +546,7 @@
       
         .project p {
             margin: 0;
-            font-size: 16px;
+            font-size: 17px;
             line-height: 1.9;
             color: rgb(207, 207, 207);
         }
@@ -561,7 +584,7 @@
           }
           
           .project p {
-              font-size: 14px;
+              font-size: 16px;
           }
           
           .project button {
@@ -592,7 +615,7 @@
           }
           
           .project p {
-              font-size: 12px;
+              font-size: 15px;
           }
           
           .project button {

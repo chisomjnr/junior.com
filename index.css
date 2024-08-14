@@ -496,7 +496,7 @@ section .title::after{
     color: orange;
 }
 .navbar.sticky .menu li a:hover{
-    color: #fff;
+    color: orange;
 }
 
 /* menu btn styling */
@@ -575,6 +575,72 @@ section .title::after{
     transform: translateX(30px); /* Initial translation to create fade-in effect */
     transition: opacity 0.4s ease, transform .4s ease;
 }
+
+
+
+
+.home-content-container {
+    display: flex;
+    justify-content: space-between; /* Adjusts spacing between the two divs */
+    align-items: center; /* Vertically aligns the items */
+    flex-wrap: wrap; /* Ensures they stack on smaller screens */
+}
+
+.home-content {
+    max-width: 60%; /* Adjust the width as needed */
+}
+
+.qr-code-container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 20px;
+    max-width: 25%; /* Adjust the width as needed */
+}
+
+.qr-code-container img {
+    box-shadow: 0 0 40px #0f0f0fee;
+    margin-bottom: 10px; /* Space between the image and the paragraph */
+    transition: .2s;
+    border: 2px solid rgba(255, 166, 0, 0);
+    border-radius: 10px;
+}
+
+.qr-code-container img:hover {
+border-color: orange;
+transform: scale(1.1);
+}
+
+.qr-code-container p {
+    color: rgb(218, 218, 218);
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+/* For smaller screens, make sure the content stacks vertically */
+@media (max-width: 768px) {
+    .home-content-container {
+        flex-direction: column;
+
+    }
+
+    .home-content, .qr-code-container {
+        max-width: 100%;
+    
+
+
+    }
+
+    .qr-code-container {
+        display: none;
+      
+    }
+    
+}
+
 
 
 
@@ -1348,6 +1414,10 @@ padding: 120px;
     .project{
         padding: 10px;
     }
+
+
+    
+    
 }
 
 .project-list > li { margin-bottom: 25px; }
