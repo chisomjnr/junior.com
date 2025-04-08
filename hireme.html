@@ -100,31 +100,54 @@
     <section class="hire-me">
         <div class="container">
             <h1>Hire Me</h1>
-            <h2>Let's Become Business Partners</h2>
+            <h2>Your Next Project Starts Here</h2>
             <p>If you're interested in my services, please fill out the form below and I'll get back to you as soon as possible.</p>
 
-                <form
-                action="https://formspree.io/f/manwjqlv"
-                method="POST"
-                id="hire-me-form"
-              >
-
-
-
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="project">Project Details</label>
-                <textarea id="project" name="project" rows="6" required></textarea>
-
-                <label for="budget">Estimated Budget</label>
-                <input type="number" id="budget" name="budget" required>
-
-                <button type="submit">Submit</button>
-            </form>
+            <form
+            action="https://formspree.io/f/manwjqlv"
+            method="POST"
+            id="hire-me-form"
+            onsubmit="document.getElementById('budget').value = budgetInput.value.replace(/,/g, '')"
+          >
+            <input type="text" id="name" placeholder="Full Name" name="name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <input type="text" id="phone" name="phone" placeholder="Your Phone Number" required>
+   
+      
+            <select id="job-type" name="job-type" required>
+              <option value="" disabled selected>Select Job Type</option>
+              <option value="Web Development">Web Development</option>
+              <option value="Mobile App Development">Mobile App Development</option>
+              <option value="Graphic Design">Graphic Design</option>
+              <option value="SEO Services">SEO Services</option>
+              <option value="Content Writing">Content Writing</option>
+              <option value="Digital Marketing">Digital Marketing</option>
+              <option value="Social Media Management">Social Media Management</option>
+              <option value="E-commerce">E-commerce</option>
+              <option value="UI/UX Design">UI/UX Design</option>
+              <option value="Animation">Animation</option>
+              <option value="Other">Other</option>
+            </select>
+            <textarea id="project" name="project" rows="6" placeholder="Project/Job Details" required></textarea>
+            <select id="currency" name="currency" required>
+              <option value="" disabled selected>Select Currency</option>
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+              <option value="GBP">NGN</option>
+            </select>
+            <input type="text" placeholder="Estimated Budget" id="budget" name="budget" required>
+            <button type="submit">Submit</button>
+          </form>
+          
+          <script>
+            const budgetInput = document.getElementById("budget");
+          
+            budgetInput.addEventListener("input", function () {
+              let value = this.value.replace(/,/g, "").replace(/\D/g, "");
+              this.value = value.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            });
+          </script>
+          
         </div>
     </section>
 
