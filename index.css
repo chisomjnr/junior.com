@@ -804,6 +804,7 @@ transform: scale(1.1);
 .about .title::after{
     /* content: "who am i?"; */
 }
+
 .about .about-content .left{
     width: 45%;
 }
@@ -812,16 +813,50 @@ transform: scale(1.1);
     width: 380px;
     object-fit: cover;
     border-radius: 20px;
-    filter: grayscale(100%) contrast(150%) brightness(90%);
-    -webkit-filter: grayscale(100%) contrast(150%) brightness(90%); /* For Safari */
+    /* filter: grayscale(100%) contrast(150%) brightness(90%); */
+    -webkit-filter: grayscale(100%) contrast(150%) brightness(90%); 
     box-shadow:  10px 10px 70px hsla(0, 0%, 0%, 0.541);
     transition:  0.2s ease-in-out;
     animation: glowing 2s ease-in-out infinite;
 
 }
 
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+}
 
+.image-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    pointer-events: none;
+}
 
+@media (max-width: 600px) {
+    .image-wrapper {
+    
+    }
+  
+    .image-wrapper img {
+    
+      height: auto;
+      border-radius: 15px;
+    }
+  
+    .image-caption {
+display: none;
+ 
+    }
+  }
+  
 /* @keyframes glowing {
     0% {
       box-shadow: 0 0 5px rgb(160, 160, 160), 0 0 20px orange;
@@ -837,7 +872,7 @@ transform: scale(1.1);
 .about .about-content .left img:hover{
     transform: scale(1.1);
     filter: none;
-    box-shadow:  10px 10px 70px hsla(0, 0%, 0%, 0.541);
+    box-shadow:  20px 20px 100px hsla(0, 0%, 0%, 0.733);
 }
 
 .about .about-content .right{
@@ -889,7 +924,7 @@ transform: scale(1.1);
     display: inline-block;
     margin: 5px;
     background: orange;
-    color: #000000;
+    color: #ffffff;
     font-size: 18px;
     font-weight: 600;
     padding: 10px 30px;
@@ -1880,7 +1915,7 @@ padding: 120px;
    
 }
 
-.xo{
+.xo6{
   
   border-radius: 20px;
   margin-left: 7px;
@@ -2924,6 +2959,10 @@ section .title{
     #popup.show {
         display: none;
        
+    }
+
+    #xo{
+        display: none;
     }
     
 }
